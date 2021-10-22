@@ -1,0 +1,72 @@
+header{
+    background-color: lightgray;
+    width: 100%;
+    border:outset;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1;
+
+}
+
+header img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+#product-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.product-item{
+    border: groove ;
+    width: 400px;
+    margin-bottom: 15px;
+   background-color: lightgray;
+   text-align: center;
+   position: relative;
+}
+.product-item a{
+    text-decoration: none;
+    color:red;
+}
+.product-item img{
+    width:400px; 
+    height: 400px;
+}
+body{
+    background-color: lightgray;
+    background-image: url(https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 500px;
+    background-size: cover;
+}
+.product-item-info{
+    background-color: aqua;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.product-item:hover .product-item-info{
+    opacity: 1;
+}
+h1{
+    color: red;
+}
